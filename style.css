@@ -1,13 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     font-family: 'PT Sans Caption', sans-serif;
     overflow-x: hidden;
 }
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
 
 .modal {
     display: none;
@@ -216,9 +223,8 @@ body {
 
 .blockSlider {
     overflow: hidden;
-    margin-right: 20px;
-    margin-left: 20px;
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 1140px;
 }
 
 .sliderLine {
@@ -325,10 +331,8 @@ body {
     display: flex;
     width: 100%;
     max-width: 1140px;
-
     margin-left: 20px;
     margin-right: 20px;
-    /*border: red solid 1px;*/
     justify-content: space-between;
 }
 
@@ -386,7 +390,13 @@ body {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 500px;
+        height: 500px;
+        background-color: green;
+    }
+
     .navigationHeader {
         display: none;
     }
@@ -483,6 +493,7 @@ body {
     }
 
     .blockHeader {
+
         justify-content: space-between;
     }
 
@@ -546,6 +557,11 @@ body {
 
     .description {
         font-size: 14px;
+    }
+
+    .blockSlider {
+        margin-right: 17px;
+        margin-left: 17px;
     }
 
     .sliderLine {
