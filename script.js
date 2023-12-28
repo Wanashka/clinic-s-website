@@ -11,8 +11,7 @@ const totalSlides = document.querySelectorAll('.sliderCard').length;
 const closeModalBtn = document.getElementById('closeModalBtn')
 const modal = document.getElementById('myModal');
 
-
-function test() {
+function openModalWindow() {
   modal.style.display = 'block'
 }
 
