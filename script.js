@@ -8,13 +8,11 @@ const menu = document.querySelector('.menu');
 const currentCard = document.querySelector('.currentCard');
 const slides = document.querySelector('.sliderLine');
 const totalSlides = document.querySelectorAll('.sliderCard').length;
-// const openModalBtn = document.querySelectorAll('.openModalBtn');
 const closeModalBtn = document.getElementById('closeModalBtn')
 const modal = document.getElementById('myModal');
 
 
 function test() {
-  // closeMenu()
   modal.style.display = 'block'
 }
 
@@ -74,7 +72,6 @@ nextBtn.addEventListener('click', nextSlide);
 burgerIcon.addEventListener('click', viewMenu);
 closeIcon.addEventListener('click', closeMenu);
 window.addEventListener('resize', removeBurgerIcon);
-// openModalBtn.addEventListener('click', test)
 closeModalBtn.addEventListener('click', closeModalRecords)
 
 
