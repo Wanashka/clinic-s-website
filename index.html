@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Logo</title>
+</head>
+<body>
+<div class="modal" id="myModal">
+    <form class="modal-content" action="process.php" method="post">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <div class="title">Записаться на прием</div>
+        <label for="name" class="explanationSlider">Как вас зовут?</label>
+        <input type="text" class="inputField" placeholder="ФИО" id="name" required/>
+
+        <label for="email" class="explanationSlider">Как с вами связаться</label>
+        <input type="email" class="inputField" placeholder="Email" id="email" required/>
+
+        <label for="message" class="explanationSlider">Раскажите о вашей проблеме</label>
+        <textarea class="textareaField" placeholder="Опишите" id="message" required></textarea>
+        <button type="submit" class="btnRecords">Отправить</button>
+    </form>
+</div>
+<header class="header">
+    <div class="containerHeader">
+        <div class="blockHeader">
+
+            <div class="blockMenuAndLogo">
+
+                <div class="burgerMenu">
+                    <div class="burgerIcon"><img src="img/burgerMenu.svg" alt=""/></div>
+                    <div class="closeIcon"><img src="img/closeMenu.svg" alt=""/></div>
+                    <div class="menu">
+                        <nav class="blockNavigation navigationHeader">
+                            <a href="#" class="itemNavigation">О клинике</a>
+                            <a href="#" class="itemNavigation">Услуги</a>
+                            <a href="#" class="itemNavigation">Специалисты</a>
+                            <a href="#" class="itemNavigation">Цены</a>
+                            <a href="#" class="itemNavigation">Контакты</a>
+                        </nav>
+                        <button onclick="test()" class="btnRecordsMenu">Записаться на прием</button>
+                    </div>
+                </div>
+                <a href="" class="blockLogo">
+                    <img class="logo" alt="logo" src="img/logo.svg"/>
+                </a>
+            </div>
+
+            <div class="blockCityAndPhone">
+                <div class="address">
+                    <img class="marker" alt="marker" src="img/mark.svg"/>
+                    <div>
+                        <div class="city">Ростов-на-Дону</div>
+                        <div class="house">ул. Ленина, 2Б</div>
+                    </div>
+                </div>
+                <div class="blockPhone">
+                    <img class="whatsappHeader" src="img/whatsapp.svg" alt="whatsapp"/>
+                    <a href="" class="phoneNumber">+7(863) 000 00 00</a>
+                </div>
+            </div>
+
+            <button onclick="test()" class="btnRecords btnRecordsHeader">Записаться на прием</button>
+        </div>
+    </div>
+    <nav class="blockNavigation navigationHeader">
+        <a href="#" class="itemNavigation">О клинике</a>
+        <a href="#" class="itemNavigation">Услуги</a>
+        <a href="#" class="itemNavigation">Специалисты</a>
+        <a href="#" class="itemNavigation">Цены</a>
+        <a href="#" class="itemNavigation">Контакты</a>
+    </nav>
+
+</header>
+<div class="content">
+    <div class="banner">
+        <div class="textBlock">
+            <div class="title">
+                Многопрофильная клиника для детей и взрослых
+            </div>
+            <div class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua
+            </div>
+        </div>
+        <img class="photoClinic" src="img/clinic.png" alt="clinic"/>
+    </div>
+    <div class="blockSlider">
+        <div class="sliderLine">
+            <div class="sliderCard">
+                <div class="info">
+                    <div class="title">Check-UP</div>
+                    <div class="explanationSlider">для мужчин</div>
+                    <div class="list">
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Гормональный скрининг
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Тестостерон
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Свободный тестостерон
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Глобулин, связывающий половые гормоны
+                        </div>
+                    </div>
+                    <div class="price">Всего 2800₽
+                        <div class="pastPrice">3500₽</div>
+                    </div>
+                    <div class="blockBtn">
+                        <button onclick="test()" class="openModalBtn btnRecords">Записаться</button>
+                        <button class="btnDetailed">Подробнее</button>
+                    </div>
+                </div>
+                <img class="photoCartSlider" alt="doctor-working-table" src="img/doctor-working-table.png"/>
+            </div>
+
+            <div class="sliderCard">
+                <div class="info">
+                    <div class="title">Check-UP</div>
+                    <div class="explanationSlider">для мужчин</div>
+                    <div class="list">
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Гормональный скрининг
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Тестостерон
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Свободный тестостерон
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Глобулин, связывающий половые гормоны
+                        </div>
+                    </div>
+                    <div class="price">Всего 2800₽
+                        <div class="pastPrice">3500₽</div>
+                    </div>
+                    <div class="blockBtn">
+                        <button onclick="test()" class="btnRecords">Записаться</button>
+                        <button class="btnDetailed">Подробнее</button>
+                    </div>
+                </div>
+                <img class="photoCartSlider" alt="doctor-working-table" src="img/doctor-working-table.png"/>
+            </div>
+
+            <div class="sliderCard">
+                <div class="info">
+                    <div class="title">Check-UP</div>
+                    <div class="explanationSlider">для мужчин</div>
+                    <div class="list">
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Гормональный скрининг
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Тестостерон
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Свободный тестостерон
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Глобулин, связывающий половые гормоны
+                        </div>
+                    </div>
+                    <div class="price">Всего 2800₽
+                        <div class="pastPrice">3500₽</div>
+                    </div>
+                    <div class="blockBtn">
+                        <button onclick="test()" class="btnRecords">Записаться</button>
+                        <button class="btnDetailed">Подробнее</button>
+                    </div>
+                </div>
+                <img class="photoCartSlider" alt="doctor-working-table" src="img/doctor-working-table.png"/>
+            </div>
+
+            <div class="sliderCard">
+                <div class="info">
+                    <div class="title">Check-UP</div>
+                    <div class="explanationSlider">для мужчин</div>
+                    <div class="list">
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Гормональный скрининг
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Тестостерон
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Свободный тестостерон
+                        </div>
+                        <div class="item">
+                            <div class="markerItem"></div>
+                            Глобулин, связывающий половые гормоны
+                        </div>
+                    </div>
+                    <div class="price">Всего 2800₽
+                        <div class="pastPrice">3500₽</div>
+                    </div>
+                    <div class="blockBtn">
+                        <button onclick="test()" class="btnRecords">Записаться</button>
+                        <button class="btnDetailed">Подробнее</button>
+                    </div>
+                </div>
+                <img class="photoCartSlider" alt="doctor-working-table" src="img/doctor-working-table.png"/>
+            </div>
+        </div>
+        <div class="pagination">
+
+            <svg class="prev-btn" width="34" height="18" viewBox="0 0 34 18" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow"
+                      d="M32.6718 7.67186H4.54493L9.20426 3.03512C9.72416 2.51768 9.72615 1.67678 9.20871 1.15689C8.69127 0.636925 7.8503 0.635 7.33041 1.15237L0.390691 8.05861C0.390226 8.05901 0.389894 8.05947 0.389496 8.05987C-0.129071 8.57731 -0.130731 9.42093 0.389363 9.94009C0.389828 9.94049 0.39016 9.94095 0.390558 9.94135L7.33028 16.8476C7.85011 17.3649 8.69107 17.3631 9.20858 16.8431C9.72602 16.3232 9.72402 15.4823 9.20413 14.9648L4.54493 10.3281H32.6718C33.4054 10.3281 34 9.7335 34 8.99998C34 8.26646 33.4054 7.67186 32.6718 7.67186Z"
+                      fill="#E1E1E1"/>
+            </svg>
+
+            <div class="currentCard">1</div>
+            <div class="totalCards">/4</div>
+
+            <svg class="next-btn" xmlns="http://www.w3.org/2000/svg" width="34" height="18" viewBox="0 0 34 18"
+                 fill="none">
+                <path class="arrow"
+                      d="M1.32822 7.67186H29.4551L24.7958 3.03512C24.2759 2.51768 24.2739 1.67678 24.7913 1.15689C25.3088 0.636925 26.1497 0.635 26.6696 1.15237L33.6094 8.05861C33.6098 8.05901 33.6102 8.05947 33.6106 8.05987C34.1291 8.57731 34.1308 9.42093 33.6107 9.94009C33.6102 9.94049 33.6099 9.94095 33.6095 9.94135L26.6698 16.8476C26.1499 17.3649 25.309 17.3631 24.7915 16.8431C24.274 16.3232 24.276 15.4823 24.7959 14.9648L29.4551 10.3281H1.32822C0.5947 10.3281 9.91821e-05 9.7335 9.91821e-05 8.99998C9.91821e-05 8.26646 0.5947 7.67186 1.32822 7.67186Z"
+                      fill="#E1E1E1"/>
+            </svg>
+
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="blockLogoAndNavigation">
+            <img alt="logo" src="img/logo%20white.svg" class="logoFooter"/>
+            <nav class="blockNavigation">
+                <a href="#" class="itemNavigation">О клинике</a>
+                <a href="#" class="itemNavigation">Услуги</a>
+                <a href="#" class="itemNavigation">Специалисты</a>
+                <a href="#" class="itemNavigation">Цены</a>
+                <a href="#" class="itemNavigation">Контакты</a>
+            </nav>
+        </div>
+        <div class="socialNetwork">
+            <img class="socialNetworkItem" src="img/instagram.svg" alt=""/>
+            <img class="socialNetworkItem" src="img/whatsapp.svg" alt=""/>
+            <img class="socialNetworkItem" src="img/telegram.svg" alt=""/>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
