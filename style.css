@@ -195,7 +195,7 @@ body {
 }
 
 .photoClinic {
-    margin-left: 150px;
+    width: 50%;
     object-fit: cover;
 }
 
