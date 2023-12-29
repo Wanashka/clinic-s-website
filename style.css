@@ -541,22 +541,24 @@ body {
         width: 100%;
         gap: 9px;
         margin-bottom: 109px;
+        padding-left: 17px;
     }
 
     .title {
         font-size: 26px;
+        max-width: 400px;
+        width: 100%;
     }
 
     .description {
         font-size: 14px;
+        max-width: 400px;
+        width: 100%;
     }
 
     .blockSlider {
         margin-right: 17px;
         margin-left: 17px;
-    }
-
-    .sliderLine {
     }
 
     .sliderCard {
